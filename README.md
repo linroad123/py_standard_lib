@@ -25,3 +25,7 @@ Read small data blocks from a plain text file and pass them to compress(). The c
 In addition to the compression and decompression functions, zlib also includes two functions to calculate the checksum of the data, namely adler32() and crc32(). The checksums calculated by these two functions cannot be considered as cryptographically secure, they are only used for data integrity verification.
 
 These two functions take the same parameters, including a data string and an optional value, which is used as a starting point for the checksum. The function returns a 32-bit signed integer value, which can be passed back to subsequent calls as a new starting point parameter to generate a dynamically changing checksum.
+
+## gzip
+The function of gzip is to read and write gzip files. It provides a file-like interface for GNU zip files, and it uses zlib to compress and decompress data.
+
