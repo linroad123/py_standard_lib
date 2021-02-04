@@ -29,3 +29,7 @@ These two functions take the same parameters, including a data string and an opt
 ## gzip
 The function of gzip is to read and write gzip files. It provides a file-like interface for GNU zip files, and it uses zlib to compress and decompress data.
 
+## tarfile
+The role of tarfile is to read and write tar archive files. This module provides read and write access to UNIX tar archive files (including compressed files). In addition to the POSIX standard, multiple GNU tar extensions are also supported. It can also handle some UNIX special file types (such as hard/soft links) and device nodes.
+
+In the process of writing the packaging code, when adding files using tar.add(), the path of the file itself will also be added, and adding arcname can add the files to the tar package according to their own naming rules.
