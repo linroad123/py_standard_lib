@@ -33,3 +33,8 @@ The function of gzip is to read and write gzip files. It provides a file-like in
 The role of tarfile is to read and write tar archive files. This module provides read and write access to UNIX tar archive files (including compressed files). In addition to the POSIX standard, multiple GNU tar extensions are also supported. It can also handle some UNIX special file types (such as hard/soft links) and device nodes.
 
 In the process of writing the packaging code, when adding files using tar.add(), the path of the file itself will also be added, and adding arcname can add the files to the tar package according to their own naming rules.
+
+### zipfile
+The function of the zipfile module is to read and write ZIP archive files. This module can be used to manage ZIP archive files, this format is popularized by the PC program PKZIP.
+
+There are two very important classes in the zipfile, namely ZipFile and ZipInfo. In most cases, we only need to use these two classes. ZipFile is the main class, used to create and read zip files, and ZipInfo is to store the information of each file in the zip file.
